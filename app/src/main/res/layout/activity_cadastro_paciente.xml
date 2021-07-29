@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CadastroPacienteActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <EditText
+      android:id="@+id/editTextPersonName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="Seu nome"
+      android:inputType="textPersonName" />
+
+  <EditText
+      android:id="@+id/editTextDataNascimento"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:layout_marginTop="50dp"
+      android:hint="Data de Nascimento"
+      android:inputType="date" />
+
+  <EditText
+      android:id="@+id/editTextDateAtual"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:layout_marginTop="100dp"
+      android:hint="Data Atual"
+      android:inputType="date" />
+
+  <EditText
+      android:id="@+id/editTextMultiLineLugares"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:layout_marginTop="150dp"
+      android:gravity="start|top"
+      android:hint="Lugares Visitados"
+      android:inputType="textMultiLine" />
+
+  <Button
+      android:id="@+id/buttonVoltar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="210dp"
+      android:layout_marginLeft="25dp"
+      android:text="Voltar" />
+
+  <Button
+      android:id="@+id/buttonSalvar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="210dp"
+      android:layout_marginLeft="275dp"
+      android:text="Salvar" />
+</RelativeLayout>
